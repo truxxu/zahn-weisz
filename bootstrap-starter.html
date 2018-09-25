@@ -12,6 +12,20 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <title>Zahnarztpraxis Dr. Peter Weisz</title>
+
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
 
@@ -199,19 +213,33 @@
       <h2>Contact</h2>
       <br>
       <div class="row">
-        <div class="col-md-3 text-center">
+        <div class="col-md-4 text-center">
           <h5><i class="far fa-clock"></i> Opening Hours</h5>
           <p>Content goes here</p>
-          <br>
+        </div>
+        <div class="col-md-4 text-center">
           <h5><i class="fas fa-map-marker-alt"></i> Address</h5>
           <p>Content goes here</p>
-          <br>
-          <h5><i class="fas fa-phone-square"></i> Telephone</h5>
-          <p>Content goes here</p>
-          <br>
         </div>
+        <div class="col-md-4 text-center">
+          <h5><i class="fas fa-phone-square"></i> Telephone</h5>
+          <p>Content goes here</p> 
+        </div>
+      <br>
       </div>
     </div>
+          <div id="map"></div>
+          <script>
+            var map;
+            var praxis = {lat: 51.46507, lng: 7.15145};
+            function initMap() {
+              map = new google.maps.Map(document.getElementById('map'), {
+                center: praxis,
+                zoom: 17
+              });
+              var marker = new google.maps.Marker({position: praxis, map: map});
+            }
+          </script>
 
     <footer class="container-fluid bg-info">
       <br>
@@ -225,5 +253,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8X-82jYTZSIDP0uqXQBiu2LWiinu-61U&callback=initMap"
+    async defer></script>
   </body>
 </html>
