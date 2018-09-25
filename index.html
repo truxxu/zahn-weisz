@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+  
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,23 +12,13 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <title>Zahnarztpraxis Dr. Peter Weisz</title>
+    <!-- CSS Stylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/main.css">
 
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
+    <title>Zahnarztpraxis Dr. Peter Weisz</title>
   </head>
-  <body>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
@@ -39,16 +30,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Starseite<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Services">Services</a>
+            <a class="nav-link" href="#Services">Leistungen</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Attention">Attention</a>
+            <a class="nav-link" href="#Attention">Service</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Contact">Contact</a>
+            <a class="nav-link" href="#Contact">Kontakt</a>
           </li>
         </ul>
       </div>
@@ -66,7 +57,7 @@
           <div class="carousel-item active">
             <img class="d-block w-100" src="https://via.placeholder.com/1366x500" alt="First slide">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Picture 1</h3>
+              <h3>Herzlich Willkommen in der Zahnarztpraxis Dr. Peter Weisz!</h3>
               <p>Some text goes here</p>
             </div>
           </div>
@@ -99,13 +90,13 @@
     <!-- Services -->
     <div class="container-fluid" id="Services">
       <br>
-      <h2>Services</h2>
+      <h2>Unsere Schwerpunkte</h2>
       <div class="row">
         <div class="col-md-4">
           <div class="card bg-dark text-white">
             <img class="card-img" src="https://via.placeholder.com/300x150" alt="Card image">
             <div class="card-img-overlay">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Zahnerhaltung</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
           </div>
@@ -114,7 +105,7 @@
           <div class="card bg-dark text-white">
             <img class="card-img" src="https://via.placeholder.com/300x150" alt="Card image">
             <div class="card-img-overlay">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Prophylaxe und Zahnreinigung</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
           </div>
@@ -123,7 +114,7 @@
           <div class="card bg-dark text-white">
             <img class="card-img" src="https://via.placeholder.com/300x150" alt="Card image">
             <div class="card-img-overlay">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Parodontologie (Zahnfleischbehandlung)</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
           </div>
@@ -135,7 +126,7 @@
           <div class="card bg-dark text-white">
             <img class="card-img" src="https://via.placeholder.com/300x150" alt="Card image">
             <div class="card-img-overlay">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Endodontie</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
           </div>
@@ -144,7 +135,7 @@
           <div class="card bg-dark text-white">
             <img class="card-img" src="https://via.placeholder.com/300x150" alt="Card image">
             <div class="card-img-overlay">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Hochwertiger Zahnersatz und Implantologie</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
           </div>
@@ -152,56 +143,58 @@
       </div>
       <br>
       <!-- Additional services -->
+    </div>
       <div class="container-fluid bg-light">
         <br>
-        <h2>Other services</h2>
+        <h2>Wir bieten Ihnen außerdem</h2>
         <div class="row">
           <div class="col-md-8">
             <ul>
-              <li>Service 1</li>
-              <li>Service 2</li>
-              <li>Service 3</li>
-              <li>Service 4</li>
-              <li>Service 5</li>
+              <li>Eine entspannte Atmosphäre</li>
+              <li>Digitales Röntgen mit erheblich geringerer Strahlenbelastung</li>
+              <li>Eine intraorale Kamera, die ihnen interessante Einblicke in den eigenen Mund ermöglicht</li>
+              <li>Vorsorgeuntersuchungen (Zahnputzschule) für Kinder und Erwachsene</li>
+              <li>Auf Wunsch amalgamfreie Füllungen</li>
+              <li>Professionelle Zahnreinigung</li>
+              <li>Behandlung der Zähne mit Airflow (Pulver-Wasserstrahlgerät)</li>
+              <li>Schienentherapie bei Zähneknirschen und Schnarchen</li>
+              <li>Zahnschutz für Kontaktsportarten</li>
+              <li>Bleaching</li>
+              <li>Zahnschmuck</li>
+              <li>Reinigung von Prothesen</li>              
             </ul>
           </div>
           <div class="col-md-4">
-            <img src="https://via.placeholder.com/350x350" class="img-fluid" alt="Responsive image">
+            <img src="https://via.placeholder.com/300x300" class="img-fluid" alt="Responsive image">
           </div>
         </div>
       <br>
       </div>
-    </div>
 
     <!-- Attention -->
     <div class="container-fluid" id="Attention">
       <br>
-      <h2>Attention</h2>
+      <h2>Service</h2>
       <div class="row">
-        <div class="col-md-4 text-center">
-          <span style="font-size: 75px"><i class="fas fa-briefcase-medical"></i></span>
-          <h3>Service 1</h3>
-          <p>Description goes here</p>
+        <div class="col-md-3 text-center">
+          <span style="font-size: 75px"><i class="far fa-calendar-check"></i></span>
+          <h3>Anmeldung</h3>
+          <p>Rufen Sie uns einfach an und vereinbaren Sie einen Termin mit uns. <br>Bei Schmerzpatienten erfolgt sofort eine Behandlung.</p>
         </div>
-        <div class="col-md-4 text-center">
-          <span style="font-size: 75px"><i class="fas fa-briefcase-medical"></i></span>
-          <h3>Service 2</h3>
-          <p>Description goes here</p>
+        <div class="col-md-3 text-center">
+          <span style="font-size: 75px"><i class="fas fa-home"></i></span>
+          <h3>Hausbesuche</h3>
+          <p>Für bettlägerige und nicht mobile Patienten bieten wir Hausbesuche an.</p>
         </div>
-        <div class="col-md-4 text-center">
-          <span style="font-size: 75px"><i class="fas fa-briefcase-medical"></i></span>
-          <h3>Service 3</h3>
-          <p>Description goes here</p>
+        <div class="col-md-3 text-center">
+          <span style="font-size: 75px"><i class="fas fa-comment"></i></span>
+          <h3>Beratung</h3>
+          <p>Wir beraten Sie selbstverständlich kostenlos und unverbindlich.</p>
         </div>
-        <div class="col-md-4 offset-md-2 text-center">
-          <span style="font-size: 75px"><i class="fas fa-briefcase-medical"></i></span>
-          <h3>Service 4</h3>
-          <p>Description goes here</p>
-        </div>
-        <div class="col-md-4 text-center">
-          <span style="font-size: 75px"><i class="fas fa-briefcase-medical"></i></span>
-          <h3>Service 5</h3>
-          <p>Description goes here</p>
+        <div class="col-md-3 text-center">
+          <span style="font-size: 75px"><i class="fas fa-tooth"></i></span>
+          <h3>Praxislabor</h3>
+          <p>Prothetische Arbeiten bzw. Zahnersatz werden bei uns im praxiseigenen Labor angefertigt.</p>
         </div>
       </div>
       <br>
@@ -210,20 +203,26 @@
     <!-- Contact -->
     <div class="container-fluid bg-light" id="Contact">
       <br>
-      <h2>Contact</h2>
+      <h2>Kontakt</h2>
       <br>
       <div class="row">
         <div class="col-md-4 text-center">
-          <h5><i class="far fa-clock"></i> Opening Hours</h5>
-          <p>Content goes here</p>
+          <h5><i class="far fa-clock"></i> Sprechzeiten</h5>
+          <br>
+          <p><b>Mo. - Fr.</b><br>8.00 - 12.00 Uhr<br>14.30 - 18.00 Uhr</p>
+          <p><b>Mi.</b><br>8.00 - 12.00 Uhr</p>
+          <p>sowie nach Vereinbarung</p>
         </div>
         <div class="col-md-4 text-center">
-          <h5><i class="fas fa-map-marker-alt"></i> Address</h5>
-          <p>Content goes here</p>
+          <h5><i class="fas fa-map-marker-alt"></i> Addresse</h5>
+          <br>
+          <p>Westenfelder Str. 199<br>44867 Bochum-Höntrop</p>
+          <p>Direkt an der Sparkasse<br>Kostenlose Parkmöglichkeiten sind ausreichend vorhanden</p>
         </div>
         <div class="col-md-4 text-center">
-          <h5><i class="fas fa-phone-square"></i> Telephone</h5>
-          <p>Content goes here</p> 
+          <h5><i class="fas fa-phone-square"></i> Kontakt</h5>
+          <br>
+          <p><b>Telefon </b>02327 / 53517<br><br><b>Telefax </b>02327 / 51266</p>
         </div>
       <br>
       </div>
@@ -241,9 +240,9 @@
             }
           </script>
 
-    <footer class="container-fluid bg-info">
+    <footer class="container-fluid bg-info text-center">
       <br>
-       <p>&copy; 2018 Zahnarztpraxis Dr. Peter Weisz &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Impressum</a></p>
+       <p>&copy; 2018 Zahnarztpraxis Dr. Peter Weisz &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Impressum</a><br>Design by Truxxu</p>
        <br>
     </footer>
 
