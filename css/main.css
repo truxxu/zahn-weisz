@@ -1,13 +1,91 @@
 html, body {
         height: 100%;
+        width: 100%;
         margin: 0;
         padding: 0;
+        background-color: ghostwhite;
+        font-family: 'Oxygen', sans-serif;
+
     }
 
-body {
-	background-color: ;
+h2 {
+	text-align: center;
+	font-weight: 700;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #1d809f;
+}
+
+a {
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+a:hover {
+  font-weight: 600;
+  color: white !important; 
+}
+
+footer {
+	color: white;
+	padding-top: 0.75rem;
+	padding-bottom: 0.25rem;
+}
+
+.bg-info {
+  background-color: #1d809f !important;
+}
+
+.bg-light {
+	background-color: #bfefff !important;
+}
+
+.text-faded {
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.service-icon {
+	font-size: 50px;
+	color: #1d809f;
+}
+
+.card-title {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.card-body {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+.card {
+	margin-bottom: 10px;
 }
 
 #map {
 	height: 100%;
+}
+
+#Contact, #Attention, #other-services, #Services {
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+}
+
+#other-services li {
+	margin-top: 0.75rem;
+}
+
+#Impressum {
+	text-align: justify;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+#Impressum a {
+	color: #1d809f;
 }
