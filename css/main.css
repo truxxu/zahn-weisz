@@ -5,12 +5,17 @@ html, body {
         padding: 0;
         background-color: ghostwhite;
         font-family: 'Oxygen', sans-serif;
-
+        font-weight: 550;
+        padding-top: 40px;
+        position: relative;
     }
 
 h2 {
 	text-align: center;
 	font-weight: 700;
+}
+h4	{
+	font-weight: 600;
 }
 
 hr {
@@ -53,6 +58,11 @@ footer {
 	color: #1d809f;
 }
 
+.navbar .service-icon {
+	font-size: 20px;
+	color: ghostwhite;
+}
+
 .card-title {
 	text-align: center;
 	padding-top: 10px;
@@ -67,25 +77,59 @@ footer {
 	margin-bottom: 10px;
 }
 
+.navbar {
+	font-size: 18px;
+	letter-spacing: 4px;
+	line-height: 2.5;
+	padding: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: ghostwhite !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #1d809f !important;
+    background-color: ghostwhite !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: ghostwhite !important;
+}
+
+.navbar-brand {
+	padding-left: 15px;
+}
+
 #map {
 	height: 100%;
 }
 
 #Contact, #Attention, #other-services, #Services {
 	padding-top: 3rem;
-	padding-bottom: 1rem;
+	padding-bottom: 3rem;
 }
 
 #other-services li {
 	margin-top: 0.75rem;
 }
 
+#other-services img {
+	width: 100%;
+	height: 100%;
+}
+
 #Impressum {
 	text-align: justify;
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 #Impressum a {
+	color: #1d809f;
+}
+
+#Contact a {
 	color: #1d809f;
 }
